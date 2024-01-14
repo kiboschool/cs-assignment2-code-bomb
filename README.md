@@ -28,7 +28,7 @@ type of environment on which we are running the bomb server.
 
 1. Click this link and Accept the Assignment to clone your own copy of the
    repository: [Assignment2-Code-Bomb](https://classroom.github.com/a/hjD0u5HG).
-2. Once the repository has been completed, refresh the page and click the "Open
+2. Once the repository has been created, refresh the page and click the "Open
    in GitHub Codespaces" button.
 
 You will now be within a Visual Studio code environment that is contained
@@ -41,7 +41,7 @@ associated with this repository.
 
 1. You can obtain your bomb by pointing your Web browser at:
 
-       [http://34.216.75.189:15213/](http://34.216.75.189:15213/)
+       http://34.216.75.189:15213/
 
    This will display a binary bomb request form for you to fill in. Enter your
    GitHub alias and Kibo email address and hit the Submit button. The server
@@ -62,10 +62,10 @@ associated with this repository.
    - `bomb.c`: Source file with the bomb's main routine and a friendly
       greeting from Dr. Evil.
 
-4. At this point, it is probably a good idea to go ahead and commit the downloaded
-   bomb and the untarred files your repo so that if your Codespace is every lost
-   for some reason, you still have the same bomb that you have been working on in
-   your repo.
+4. At this point, it is probably a good idea to go ahead and commit the
+   downloaded bomb and the untarred files to your repo so that if your Codespace
+   is ever lost, you still have the same bomb that you have been working on in
+   a safe place.
 
 If for some reason you request multiple bombs, this is not a problem.
 Choose one bomb to work on and delete the rest.
@@ -122,7 +122,7 @@ The bomb will notify your instructor
 automatically about your progress as you work on it. You can keep track
 of how you are doing by looking at the class scoreboard at:
 
-    [http://34.216.75.189:15213/scoreboard](http://34.216.75.189:15213/scoreboard)
+    http://34.216.75.189:15213/scoreboard
 
 This web page is updated continuously to show the progress of each
 bomb.
