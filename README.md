@@ -26,28 +26,46 @@ Therefore, for this assignment, you will need to work within a GitHub CodeSpace.
 allows us to ensure that you will be using an x86-64 Linux environment, the same
 type of environment on which we are running the bomb server.
 
-1. Click this link to clone the repository: [Assignment2-Code-Bomb]().
-2. 
+1. Click this link and Accept the Assignment to clone your own copy of the
+   repository: [Assignment2-Code-Bomb](https://classroom.github.com/a/hjD0u5HG).
+2. Once the repository has been completed, refresh the page and click the "Open
+   in GitHub Codespaces" button.
+
+You will now be within a Visual Studio code environment that is contained
+within your web browser.  It has a terminal, and a full Linux environment.
+
+You can return to the same Codespace at any time by visiting [https://github.com/codespaces](https://github.com/codespaces) and selecting the Codespace 
+associated with this repository.  
 
 ## Step 1: Get Your Bomb
 
-You can obtain your bomb by pointing your Web browser at:
+1. You can obtain your bomb by pointing your Web browser at:
 
        [http://34.216.75.189:15213/](http://34.216.75.189:15213/)
 
-This will display a binary bomb request form for you to fill in. Enter
-your GitHub alias and Kibo email address and hit the Submit button. The server
-will build your bomb and return it to your browser in a `tar` file
-called `bombk.tar`, where $k$ is the unique number of your bomb.
+   This will display a binary bomb request form for you to fill in. Enter your
+   GitHub alias and Kibo email address and hit the Submit button. The server
+   will build your bomb and return it to your browser in a `tar` file called
+   `bombk.tar`, where $k$ is the unique number of your bomb.
 
-Save the `bombk.tar` file to a (protected) directory in which you plan
-to do your work. Then give the command: `tar -xvf bombk.tar`. This will
-create a directory called `./bombk` with the following files:
+2. Once you have downloaded your bomb to your personal computer, you will need
+   to upload it to your Codespace environment.  To do that, right-click within
+   the "Explorer" pane of your environment and select "Upload".  Finally, select
+   the `bombk.tar` file that you just downloaded to your computer and click
+   "Open".  
 
-- `README`: Identifies the bomb and its owners.
-- `bomb`: The executable binary bomb.
-- `bomb.c`: Source file with the bomb's main routine and a friendly
-   greeting from Dr. Evil.
+3. Then, within the Codespace terminal, give the command: `tar -xvf bombk.tar`.
+   This will create a directory called `./bombk` with the following files:
+
+   - `README`: Identifies the bomb and its owners.
+   - `bomb`: The executable binary bomb.
+   - `bomb.c`: Source file with the bomb's main routine and a friendly
+      greeting from Dr. Evil.
+
+4. At this point, it is probably a good idea to go ahead and commit the downloaded
+   bomb and the untarred files your repo so that if your Codespace is every lost
+   for some reason, you still have the same bomb that you have been working on in
+   your repo.
 
 If for some reason you request multiple bombs, this is not a problem.
 Choose one bomb to work on and delete the rest.
@@ -56,7 +74,7 @@ Choose one bomb to work on and delete the rest.
 
 Your job for this assignment is to defuse your bomb.
 
-You must do the assignment in GitHub CodeSpaces. In fact, there
+You must do the assignment in GitHub Codespaces. In fact, there
 is a rumor that Dr. Evil really is evil, and the bomb will always blow
 up if run elsewhere. There are several other tamper-proofing devices
 built into the bomb as well, or so we hear.
