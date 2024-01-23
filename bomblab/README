@@ -1,3 +1,27 @@
+January 24, 2024 - Setup notes from david@kibo.school
+
+This lab was constructed with the assumption that students would be
+completing it in a physical lab environment, which is not the case for Kibo.
+Instead, we rely on students using a GitHub Codespace environment.  At
+the time of this writing, the default config for those environments was
+Ubuntu 20.04 on x86-64. With that in mind, the server environment was set up
+in EC2 as follows:
+
+- Free tier t2.micro instance with ubuntu 20.04
+- The security group was set up with inbound rules:
+  - Port: 15213, Type: Custom TCP, Source: 0.0.0.0/0
+  - Port: 15214, Type: Custom TCP, Source: 0.0.0.0/0
+- This directory is copied onto that host, and the instructions below are used
+  to prepare the lab and start the server.  
+
+In addition, since students will be submitting requests from any GitHub
+Codespace, the configuration to restrict the hostnames from which requests
+will be submitted is ignored.  Instead, the `/src/support.c` file was
+modified to require that the hostname start with `codespace`.
+
+The final change that was made was to modify `bomblab-resultd` to not
+lookup the hostname and instead just just use the ip address in the logging.
+
 #######################################################
 # CS:APP Bomb Lab
 # Directions to Instructors
